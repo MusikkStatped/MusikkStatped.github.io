@@ -1,0 +1,115 @@
+/* Felles stil – inspirert av statped.no */
+:root {
+  --blaa: #1b2a5c;
+  --blaa-lys: #e8ecf7;
+  --aksent: #f2c94c;
+  --tekst: #1a1a1a;
+  --bakgrunn: rgb(237, 240, 242);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--tekst);
+  background: var(--bakgrunn);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgb(230, 227, 224);
+  color: var(--blaa);
+  padding: 2rem max(2rem, calc((100% - 800px) / 2));
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  color: var(--blaa);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+nav a:hover {
+  border-bottom-color: var(--aksent);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+}
+
+h2 {
+  color: var(--blaa);
+  margin-top: 2rem;
+}
+
+h3 {
+  color: var(--blaa);
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--blaa);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--aksent);
+  outline-offset: 2px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--blaa-lys);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+ul li a:hover {
+  background: rgb(230, 227, 224);
+  color: var(--tekst);
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: rgb(230, 227, 224);
+  color: var(--tekst);
+}
